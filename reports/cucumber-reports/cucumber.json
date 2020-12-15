@@ -1,0 +1,2539 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-15T22:09:52.850Z",
+        "before": [
+          {
+            "result": {
+              "duration": 18524000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testSetup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Validate error message while Creating an account with invalid email",
+        "description": "",
+        "id": "create-account-page-scenarios;validate-error-message-while-creating-an-account-with-invalid-email;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 810000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13075000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on \u0027Home\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.iAmOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3619000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on \u0027Sign in\u0027 link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Sign in\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.clickOnSignInLink(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 469000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter \u0027abc\u0027 in Email address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027abc\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.enterEmailInEmailAddressField(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 937000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on \u0027Create an account\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Create an account\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1782000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Error message \u0027Invalid email address.\u0027 should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Invalid email address.\u0027",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.errorMessageInvalidEmailAddressShouldBeDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserStory4"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-15T22:10:34.013Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7082000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testSetup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Validate error message while Creating an account with invalid email",
+        "description": "",
+        "id": "create-account-page-scenarios;validate-error-message-while-creating-an-account-with-invalid-email;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1032000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5727000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on \u0027Home\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.iAmOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5046000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on \u0027Sign in\u0027 link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Sign in\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.clickOnSignInLink(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 905000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter \u0027abc@xy\u0027 in Email address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027abc@xy\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.enterEmailInEmailAddressField(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 677000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on \u0027Create an account\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Create an account\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1776000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Error message \u0027Invalid email address.\u0027 should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Invalid email address.\u0027",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.errorMessageInvalidEmailAddressShouldBeDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserStory4"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-15T22:10:56.342Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6846000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testSetup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Validate error message while Creating an account with invalid email",
+        "description": "",
+        "id": "create-account-page-scenarios;validate-error-message-while-creating-an-account-with-invalid-email;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 809000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7068000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on \u0027Home\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.iAmOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3771000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on \u0027Sign in\u0027 link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Sign in\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.clickOnSignInLink(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 445000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter \u0027@abc\u0027 in Email address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027@abc\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.enterEmailInEmailAddressField(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 680000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on \u0027Create an account\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Create an account\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1607000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Error message \u0027Invalid email address.\u0027 should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Invalid email address.\u0027",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.errorMessageInvalidEmailAddressShouldBeDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserStory4"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-15T22:11:17.618Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6332000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testSetup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Validate error message while Creating an account with invalid email",
+        "description": "",
+        "id": "create-account-page-scenarios;validate-error-message-while-creating-an-account-with-invalid-email;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 833000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5315000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on \u0027Home\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.iAmOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2798000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on \u0027Sign in\u0027 link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Sign in\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.clickOnSignInLink(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 568000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter \u0027@abc.com\u0027 in Email address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027@abc.com\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.enterEmailInEmailAddressField(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 778000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on \u0027Create an account\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Create an account\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1018000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Error message \u0027Invalid email address.\u0027 should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Invalid email address.\u0027",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.errorMessageInvalidEmailAddressShouldBeDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserStory4"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-15T22:11:35.335Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6385000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testSetup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Create an account without providing mandatory fields",
+        "description": "",
+        "id": "create-account-page-scenarios;create-an-account-without-providing-mandatory-fields",
+        "after": [
+          {
+            "result": {
+              "duration": 815000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4840000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am on \u0027Home\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.iAmOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2314000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click on \u0027Sign in\u0027 link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Sign in\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.clickOnSignInLink(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 645000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Enter \u0027valid\u0027 in Email address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027valid\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.enterEmailInEmailAddressField(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 650000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Click on \u0027Create an account\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Create an account\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4812000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click on \u0027Register\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Register\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1090000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Below error messages are displayed",
+            "match": {
+              "location": "stepdefinitions.CreateAccountSteps.belowErrorMessagesAreDisplayed(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "You must register at least one phone number."
+                ]
+              },
+              {
+                "cells": [
+                  "lastname is required."
+                ]
+              },
+              {
+                "cells": [
+                  "firstname is required."
+                ]
+              },
+              {
+                "cells": [
+                  "passwd is required."
+                ]
+              },
+              {
+                "cells": [
+                  "address1 is required."
+                ]
+              },
+              {
+                "cells": [
+                  "city is required."
+                ]
+              },
+              {
+                "cells": [
+                  "The Zip/Postal code you\u0027ve entered is invalid. It must follow this format: 00000"
+                ]
+              },
+              {
+                "cells": [
+                  "This country requires you to choose a State."
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserStory4"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-15T22:11:56.935Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6319000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testSetup()"
+            }
+          }
+        ],
+        "line": 62,
+        "name": "Validate Error message by providing invalid data in all the values",
+        "description": "",
+        "id": "create-account-page-scenarios;validate-error-message-by-providing-invalid-data-in-all-the-values;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 813000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5087000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I am on \u0027Home\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.iAmOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3539000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Click on \u0027Sign in\u0027 link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Sign in\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.clickOnSignInLink(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 643000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Enter \u0027valid\u0027 in Email address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027valid\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.enterEmailInEmailAddressField(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 636000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Click on \u0027Create an account\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Create an account\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4203000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I fill \u0027First Name\u0027 with value \u0027Ath!ra\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027First Name\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Ath!ra\u0027",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 769000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I fill \u0027Last Name\u0027 with value \u0027V!vek\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Last Name\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027V!vek\u0027",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 725000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I fill \u0027Password\u0027 with value \u0027Pass\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Password\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Pass\u0027",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 839000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I fill \u0027Address\u0027 with value \u0027$%^\u0026*(\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Address\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027$%^\u0026*(\u0027",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 814000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I fill \u0027City\u0027 with value \u0027\"%^\u0026*(\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027City\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027\"%^\u0026*(\u0027",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 786000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I fill \u0027Zip/Postal code\u0027 with value \u0027\"$%^\u0026*(\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Zip/Postal code\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027\"$%^\u0026*(\u0027",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 942000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I fill \u0027Home Phone\u0027 with value \u0027ABCDBCNENN\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home Phone\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027ABCDBCNENN\u0027",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 953000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I fill \u0027Mobile Phone\u0027 with value \u0027ABCDBCNENN\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Mobile Phone\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027ABCDBCNENN\u0027",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3269000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Click on \u0027Register\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Register\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 829000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Below error messages are displayed",
+            "match": {
+              "location": "stepdefinitions.CreateAccountSteps.belowErrorMessagesAreDisplayed(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "lastname is invalid."
+                ]
+              },
+              {
+                "cells": [
+                  "firstname is invalid."
+                ]
+              },
+              {
+                "cells": [
+                  "passwd is invalid."
+                ]
+              },
+              {
+                "cells": [
+                  "address1 is invalid."
+                ]
+              },
+              {
+                "cells": [
+                  "postcode is invalid."
+                ]
+              },
+              {
+                "cells": [
+                  "city is invalid."
+                ]
+              },
+              {
+                "cells": [
+                  "phone is invalid."
+                ]
+              },
+              {
+                "cells": [
+                  "phone_mobile is invalid."
+                ]
+              },
+              {
+                "cells": [
+                  "The Zip/Postal code you\u0027ve entered is invalid. It must follow this format: 00000"
+                ]
+              },
+              {
+                "cells": [
+                  "This country requires you to choose a State."
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserStory4"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-15T22:12:28.181Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6322000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testSetup()"
+            }
+          }
+        ],
+        "line": 91,
+        "name": "Create an account by providing all the values",
+        "description": "",
+        "id": "create-account-page-scenarios;create-an-account-by-providing-all-the-values;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 906000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4654000000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "I am on \u0027Home\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.iAmOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2838000000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "Click on \u0027Sign in\u0027 link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Sign in\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.clickOnSignInLink(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 767000000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "Enter \u0027valid\u0027 in Email address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027valid\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.enterEmailInEmailAddressField(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 757000000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "Click on \u0027Create an account\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Create an account\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3216000000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I fill \u0027Title\u0027 with value \u0027Mrs.\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Title\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Mrs.\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 713000000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I fill \u0027First Name\u0027 with value \u0027Athira\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027First Name\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Athira\u0027",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 731000000,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I fill \u0027Last Name\u0027 with value \u0027Vivek\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Last Name\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Vivek\u0027",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 826000000,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I fill \u0027Password\u0027 with value \u0027Password\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Password\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Password\u0027",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2353000000,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I fill \u0027Date Of Birth\u0027 with value \u002720/1/1980\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Date Of Birth\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u002720/1/1980\u0027",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 887000000,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I fill \u0027Company\u0027 with value \u0027Answer Digital\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Company\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Answer Digital\u0027",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 737000000,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I fill \u0027Address\u0027 with value \u0027Grattan\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Address\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Grattan\u0027",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 819000000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I fill \u0027City\u0027 with value \u0027Leeds\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027City\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Leeds\u0027",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 968000000,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "I fill \u0027State\u0027 with value \u0027Alaska\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027State\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Alaska\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 786000000,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "I fill \u0027Zip/Postal code\u0027 with value \u002750011\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Zip/Postal code\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u002750011\u0027",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 828000000,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "I fill \u0027Country\u0027 with value \u0027United States\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Country\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027United States\u0027",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1642000000,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I fill \u0027Additional Information\u0027 with value \u0027Looking for practice Automation\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Additional Information\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Looking for practice Automation\u0027",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1028000000,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I fill \u0027Home Phone\u0027 with value \u00279999999999\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home Phone\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u00279999999999\u0027",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1154000000,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I fill \u0027Mobile Phone\u0027 with value \u00279999999999\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Mobile Phone\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u00279999999999\u0027",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1166000000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "I fill \u0027Address Alias\u0027 with value \u0027Bradford, UK\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Address Alias\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Bradford, UK\u0027",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2890000000,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "Click on \u0027Register\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Register\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "I should be navigated to \u0027My account\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027My account\u0027",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iWillBeNavigatedToMyAccountPage(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 189000000,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "Account name displayed is a combination of \u0027Athira\u0027 and \u0027Vivek\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Athira\u0027",
+                  "offset": 43
+                },
+                {
+                  "val": "\u0027Vivek\u0027",
+                  "offset": 56
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.accountNameDisplayedIsACombinationOfFirstNameAndLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserStory4"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-15T22:13:05.548Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6461000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testSetup()"
+            }
+          }
+        ],
+        "line": 113,
+        "name": "Create an account by providing only mandatory fields",
+        "description": "",
+        "id": "create-account-page-scenarios;create-an-account-by-providing-only-mandatory-fields;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1099000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5230000000,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "I am on \u0027Home\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.iAmOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3886000000,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "Click on \u0027Sign in\u0027 link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Sign in\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.clickOnSignInLink(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 628000000,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "Enter \u0027valid\u0027 in Email address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027valid\u0027",
+                  "offset": 6
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.enterEmailInEmailAddressField(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 578000000,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "Click on \u0027Create an account\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Create an account\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2870000000,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "I fill \u0027First Name\u0027 with value \u0027Athira\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027First Name\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Athira\u0027",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 700000000,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "I fill \u0027Last Name\u0027 with value \u0027Vivek\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Last Name\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Vivek\u0027",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 812000000,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "I fill \u0027Password\u0027 with value \u0027Password\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Password\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Password\u0027",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 900000000,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "I fill \u0027Address\u0027 with value \u0027Grattan\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Address\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Grattan\u0027",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 824000000,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "I fill \u0027City\u0027 with value \u0027Leeds\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027City\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Leeds\u0027",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 920000000,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "I fill \u0027State\u0027 with value \u0027Alaska\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027State\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027Alaska\u0027",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 731000000,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "I fill \u0027Zip/Postal code\u0027 with value \u002750011\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Zip/Postal code\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u002750011\u0027",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 628000000,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "I fill \u0027Country\u0027 with value \u0027United States\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Country\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u0027United States\u0027",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 793000000,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "I fill \u0027Mobile Phone\u0027 with value \u00279999999999\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Mobile Phone\u0027",
+                  "offset": 7
+                },
+                {
+                  "val": "\u00279999999999\u0027",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iFillLastNameWithValueLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2267000000,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "Click on \u0027Register\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Register\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43000000,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "I should be navigated to \u0027My account\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027My account\u0027",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.iWillBeNavigatedToMyAccountPage(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 197000000,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "Account name displayed is a combination of \u0027Athira\u0027 and \u0027Vivek\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Athira\u0027",
+                  "offset": 43
+                },
+                {
+                  "val": "\u0027Vivek\u0027",
+                  "offset": 56
+                }
+              ],
+              "location": "stepdefinitions.CreateAccountSteps.accountNameDisplayedIsACombinationOfFirstNameAndLastName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserStory4"
+          }
+        ]
+      }
+    ],
+    "name": "Create Account page scenarios",
+    "description": "",
+    "id": "create-account-page-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/CreateAccount.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-15T22:13:35.197Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7098000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testSetup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "See a store from West Palm Beach",
+        "description": "",
+        "id": "our-stores-page-scenarios;see-a-store-from-west-palm-beach",
+        "after": [
+          {
+            "result": {
+              "duration": 806000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4721000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on \u0027Home\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.iAmOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4899000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on \u0027Our Stores\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Our Stores\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.StoresSteps.clickOnOurStores(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2468000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should be able to scroll the map to see store near \u0027West Palm Beach\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027West Palm Beach\u0027",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.StoresSteps.iShouldBeAbleToScrollTheMapToSeeStore(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2517000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be able to take screenshot",
+            "match": {
+              "location": "stepdefinitions.StoresSteps.userShouldBeAbleToTakeScreenshot()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserStory5"
+          }
+        ]
+      }
+    ],
+    "name": "Our Stores page scenarios",
+    "description": "",
+    "id": "our-stores-page-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/OurStores.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-15T22:13:57.745Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6269000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testSetup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Search Summer Dress from Navigation menu",
+        "description": "",
+        "id": "search-results-page-scenarios;search-summer-dress-from-navigation-menu",
+        "after": [
+          {
+            "result": {
+              "duration": 859000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4897000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on \u0027Home\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.iAmOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3616000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Hover over \u0027WOMEN\u0027 option from navigation menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027WOMEN\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.SearchResultsSteps.hoverOverOptionFromNavigationMenu(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 269000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Sub navigation options are displayed",
+            "match": {
+              "location": "stepdefinitions.SearchResultsSteps.subNavigationOptionsAreDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7798000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I Hover over \u0027Women\u0027 and click \u0027Summer Dresses\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Women\u0027",
+                  "offset": 13
+                },
+                {
+                  "val": "\u0027Summer Dresses\u0027",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.hoverAndAddToCart(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 204000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Summer items are displayed",
+            "match": {
+              "location": "stepdefinitions.SearchResultsSteps.summerItemsAreDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserStory2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-15T22:14:21.701Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6540000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testSetup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Change slider from Navigation menu",
+        "description": "",
+        "id": "search-results-page-scenarios;change-slider-from-navigation-menu",
+        "after": [
+          {
+            "result": {
+              "duration": 860000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5589000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on \u0027Home\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.iAmOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7721000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I Hover over \u0027Women\u0027 and click \u0027Summer Dresses\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Women\u0027",
+                  "offset": 13
+                },
+                {
+                  "val": "\u0027Summer Dresses\u0027",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.hoverAndAddToCart(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 930000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I change the \u0027Upper Limit\u0027 of slider to 20",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Upper Limit\u0027",
+                  "offset": 13
+                },
+                {
+                  "val": "20",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.SearchResultsSteps.iChangeTheUpperLimitOfSliderTo(java.lang.String,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 251000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Search results are updated from \u0027$16.00 - $20.00\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027$16.00 - $20.00\u0027",
+                  "offset": 32
+                }
+              ],
+              "location": "stepdefinitions.SearchResultsSteps.searchResultsAreUpdated(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserStory3"
+          }
+        ]
+      }
+    ],
+    "name": "Search Results page scenarios",
+    "description": "",
+    "id": "search-results-page-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/SearchResults.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5935000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on \u0027Home\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Home\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.iAmOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5490000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Hover over \u0027Faded Short Sleeve T-shirts\u0027 and click \u0027Add to cart\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Faded Short Sleeve T-shirts\u0027",
+                  "offset": 13
+                },
+                {
+                  "val": "\u0027Add to cart\u0027",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.hoverAndAddToCart(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3898000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on \u0027Proceed to checkout\u0027 button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Proceed to checkout\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 239000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "An item with description name \u0027Faded Short Sleeve T-shirts\u0027 is available in Shopping cart summary",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Faded Short Sleeve T-shirts\u0027",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.ShoppingCartSteps.an_item_with_description_name_is_available_in_Shopping_cart_summary(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-15T22:14:43.615Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7207000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testSetup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Delete an item present in the basket",
+        "description": "",
+        "id": "shopping-cart-page-scenarios;delete-an-item-present-in-the-basket",
+        "after": [
+          {
+            "result": {
+              "duration": 812000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "setup.Hooks.testTearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on \u0027ShoppingCart\u0027 page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027ShoppingCart\u0027",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefinitions.CommonSteps.iAmOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 177000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "There is \u00271 Product\u0027 in cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u00271 Product\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.ShoppingCartSteps.there_is_product_in_cart(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 301000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Delete button should be displayed for the item \u0027Faded Short Sleeve T-shirts\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Faded Short Sleeve T-shirts\u0027",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.ShoppingCartSteps.button_should_be_displayed_for_the_item(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 417000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Click on Delete button of the item \u0027Faded Short Sleeve T-shirts\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Faded Short Sleeve T-shirts\u0027",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinitions.ShoppingCartSteps.click_on_button_of_the_item(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2803000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The shopping cart is empty",
+            "match": {
+              "location": "stepdefinitions.ShoppingCartSteps.the_shopping_cart_is_empty()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 162000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Banner displays the message \u0027Your shopping cart is empty.\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Your shopping cart is empty.\u0027",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.ShoppingCartSteps.banner_displays_the_message(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserStory1"
+          }
+        ]
+      }
+    ],
+    "name": "Shopping cart page scenarios",
+    "description": "",
+    "id": "shopping-cart-page-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/ShoppingCart.feature",
+    "tags": []
+  }
+]
