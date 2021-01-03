@@ -1,6 +1,5 @@
 # My-Store-Automation
-This repository contains code for testing My Store website.
-Application URL - http://automationpractice.com/index.php
+This repository contains code for testing My Store website (Application URL - http://automationpractice.com/index.php).
 A Cucumber Based Framework is used for automation. Page Factory Model
 with Selenium & Java is used for implementation of automation code. As part of testing five user stories have been implemented. The test execution reports
 are generated and is available for analysis.
@@ -12,10 +11,19 @@ for viewing the results.
 * `Pages` - Obtains the elements in each page.
 * `Actions` - Includes the actions performed in each page.
 
-## Test Execution Details
+## Directories
+* `Reports` - reports/pretty-cucumber/cucumber-html-reports/overview-features
+* `Screenshots` - screenshots/
+* `Features` - src/test/features/
+* `StepDefinitions` - src/test/java/stepdefinitions/
+* `Runner` - src/test/java/runner/TestRunner.java
+* `Pages` - src/test/java/pages/
+* `Page-Actions` - src/test/java/actions/
+* `Test Execution Settings` - src/test/resources/application.properties
 
+## Test Execution Details
 ### Reports
-**1. Directory: reports/pretty-cucumber**
+**1. Directory: reports/pretty-cucumber/cucumber-html-reports**
 * For viewing detailed analysis of cucumber based execution.
 
 **2. Directory: reports/cucumber-reports**
