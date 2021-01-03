@@ -13,6 +13,7 @@ import setup.DriverSetup;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import static java.util.Objects.nonNull;
 
@@ -35,7 +36,7 @@ public class CreateAccountPageActions {
         wait.until(ExpectedConditions.visibilityOf(createAccountPageElements.firstnameInput));
         wait.until(ExpectedConditions.elementToBeClickable(createAccountPageElements.firstnameInput));
         wait.until(ExpectedConditions.elementToBeClickable(createAccountPageElements.registerButton));
-        switch (FieldName.getFieldName(fieldName)) {
+        switch (Objects.requireNonNull(FieldName.getFieldName(fieldName))) {
             case TITLE:
                 selectTitle(fieldValue);
                 break;
@@ -80,6 +81,7 @@ public class CreateAccountPageActions {
                 createAccountPageElements.mobileInput.sendKeys(fieldValue);
                 break;
             case ADDRESS_ALIAS:
+                createAccountPageElements.aliasAddress.clear();
                 createAccountPageElements.aliasAddress.sendKeys(fieldValue);
                 break;
             default:

@@ -15,6 +15,7 @@ import pages.HomePageElements;
 import setup.DriverSetup;
 
 import java.time.Duration;
+import java.util.Objects;
 
 import static utils.PropertyReader.getProp;
 
@@ -46,7 +47,7 @@ public class CommonActions {
     }
 
     public void validatePageUrl(String pageName) {
-        switch (PageName.getPageName(pageName)) {
+        switch (Objects.requireNonNull(PageName.getPageName(pageName))) {
             case HOME_PAGE:
                 navigateToUrl(getProp("homepage.url"));
                 break;
@@ -59,7 +60,7 @@ public class CommonActions {
     }
 
     public void clickButton(String buttonName) {
-        switch (ButtonName.getButtonName(buttonName)) {
+        switch (Objects.requireNonNull(ButtonName.getButtonName(buttonName))) {
             case PROCEED_TO_CHECKOUT:
                 wait.until(ExpectedConditions.visibilityOf(homePageElements.proceedToCheckoutButton));
                 homePageElements.proceedToCheckoutButton.click();
