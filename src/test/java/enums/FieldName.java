@@ -23,10 +23,10 @@ public enum FieldName {
         this.fieldName = fieldName;
     }
 
-    public static FieldName getButtonName(String buttonLookUpValue) {
-        for (FieldName fieldName : FieldName.values()) {
-            if (fieldName.fieldName.equalsIgnoreCase(buttonLookUpValue)) {
-                return fieldName;
+    public static FieldName getFieldName(String fieldLookUpValue) {
+        for (FieldName field : FieldName.values()) {
+            if (field.fieldName.equalsIgnoreCase(fieldLookUpValue)) {
+                return field;
             }
         }
         return null;

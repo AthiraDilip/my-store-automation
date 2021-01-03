@@ -47,7 +47,7 @@ public class CreateAccountSteps {
     }
 
     @And("I fill {string} with value {string}")
-    public void iFillLastNameWithValueLastName(String fieldName, String fieldValue) {
+    public void iFillFieldNameWithFieldValue(String fieldName, String fieldValue) {
         createAccountPageActions.fillSignUpFormDetail(fieldName, fieldValue);
     }
 

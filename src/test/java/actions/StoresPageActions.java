@@ -1,22 +1,20 @@
 package actions;
 
-import org.apache.commons.io.FileUtils;
-import org.junit.Assert;
-import org.openqa.selenium.*;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.StoresPageElements;
 import setup.DriverSetup;
-
-import java.io.File;
-import java.io.IOException;
+import utils.Screenshot;
 
 public class StoresPageActions {
-    CommonActions commonActions;
-    StoresPageElements storesPageElements;
     private final WebDriver driver;
     private final WebDriverWait wait;
+    CommonActions commonActions;
+    StoresPageElements storesPageElements;
 
     public StoresPageActions(DriverSetup driverSetup, CommonActions commonActions) {
         this.driver = driverSetup.getDriverInstance();
@@ -25,14 +23,18 @@ public class StoresPageActions {
         this.wait = new WebDriverWait(driver, 30);
     }
 
-    public void scrollToLocationInMap() {
+    public void scrollToLocationInMap() throws InterruptedException {
+        wait.until(ExpectedConditions.elementToBeClickable(storesPageElements.dismissWarning));
         storesPageElements.dismissWarning.click();
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",
                 storesPageElements.mapElement);
         Actions actions = new Actions(driver);
+        wait.until(ExpectedConditions.elementToBeClickable(storesPageElements.mapElement));
         actions.click(storesPageElements.mapElement).
                 sendKeys(Keys.PAGE_UP, Keys.PAGE_UP).perform();
+        wait.until(ExpectedConditions.elementToBeClickable(storesPageElements.mapZoomInButton));
         storesPageElements.mapZoomInButton.click();
+        Thread.sleep(2000);             //Adding sleep for the zoom in action to complete
     }
 
 
@@ -43,15 +45,7 @@ public class StoresPageActions {
         storesPageElements.ourStoresLink.click();
     }
 
-    public void takeScreenshot() {
-        TakesScreenshot scrShot = ((TakesScreenshot) driver);
-        File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-        File DestFile = new File("screenshots/west_palm_beach_stores.png");
-        try {
-            FileUtils.copyFile(SrcFile, DestFile);
-        } catch (IOException e) {
-            e.printStackTrace();
-            Assert.fail();
-        }
+    public void takeScreenshot(String filename) {
+        Screenshot.takeScreenshot(driver, filename);
     }
 }

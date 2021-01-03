@@ -8,9 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class CreateAccountPageElements {
-    @FindBy(css = "div.radio[id$='1'] input")
+    private final WebDriver driver;
+    @FindBy(css = "div.radio[id$='1'] > span")
     public WebElement genderMale;
-    @FindBy(css = "div.radio[id$='2'] input")
+    @FindBy(css = "div.radio[id$='2'] > span")
     public WebElement genderFemale;
     @FindBy(css = "input#customer_firstname")
     public WebElement firstnameInput;
@@ -48,8 +49,6 @@ public class CreateAccountPageElements {
     public WebElement registerButton;
     @FindBy(css = "div.alert.alert-danger > ol > li")
     public List<WebElement> errorMessageList;
-
-    private final WebDriver driver;
 
     public CreateAccountPageElements(WebDriver driver) {
         this.driver = driver;

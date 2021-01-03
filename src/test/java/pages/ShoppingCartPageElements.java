@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class ShoppingCartPageElements {
-    WebDriver driver;
     @FindBy(css = "span#summary_products_quantity")
     public WebElement productQuantity;
     @FindBy(css = "tbody > tr")
@@ -19,6 +18,7 @@ public class ShoppingCartPageElements {
     public WebElement bannerMessage;
     @FindBy(css = "span.navigation_page")
     public WebElement shoppingCartBreadCrumb;
+    WebDriver driver;
 
 
     public ShoppingCartPageElements(WebDriver driver) {

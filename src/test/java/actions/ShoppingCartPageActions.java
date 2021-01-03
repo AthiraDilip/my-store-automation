@@ -9,9 +9,9 @@ import pages.ShoppingCartPageElements;
 import setup.DriverSetup;
 
 public class ShoppingCartPageActions {
-    ShoppingCartPageElements shoppingCartPageElements;
     private final WebDriver driver;
     private final WebDriverWait wait;
+    ShoppingCartPageElements shoppingCartPageElements;
 
     public ShoppingCartPageActions(DriverSetup driverSetup) {
         this.driver = driverSetup.getDriverInstance();

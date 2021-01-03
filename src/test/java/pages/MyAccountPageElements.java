@@ -6,10 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class MyAccountPageElements {
+    private final WebDriver driver;
     @FindBy(css = "a.account > span")
     public WebElement accountName;
-
-    private final WebDriver driver;
 
     public MyAccountPageElements(WebDriver driver) {
         this.driver = driver;

@@ -1,6 +1,7 @@
 package actions;
 
 import enums.ButtonName;
+import enums.PageName;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,9 +21,9 @@ import static utils.PropertyReader.getProp;
 public class CommonActions {
     HomePageElements homePageElements;
     AuthenticationPageElements authenticationPageElements;
-    WebDriver driver;
-    WebDriverWait wait;
     CreateAccountPageElements createAccountPageElements;
+    private WebDriver driver;
+    private WebDriverWait wait;
 
     public CommonActions(DriverSetup driverSetup) {
         this.driver = driverSetup.getDriverInstance();
@@ -45,20 +46,20 @@ public class CommonActions {
     }
 
     public void validatePageUrl(String pageName) {
-        switch (pageName.trim().toUpperCase()) {
-            case "HOME":
-                driver.get(getProp("homepage.url"));
+        switch (PageName.getPageName(pageName)) {
+            case HOME_PAGE:
+                navigateToUrl(getProp("homepage.url"));
                 break;
-            case "SHOPPING CART":
-                driver.get(getProp("Shoppingcartpage.url"));
+            case SHOPPING_CART_PAGE:
+                navigateToUrl(getProp("shoppingcartpage.url"));
                 break;
             default:
                 System.out.println("Invalid page");
         }
     }
 
-    public void clickButton(ButtonName buttonName) {
-        switch (buttonName) {
+    public void clickButton(String buttonName) {
+        switch (ButtonName.getButtonName(buttonName)) {
             case PROCEED_TO_CHECKOUT:
                 wait.until(ExpectedConditions.visibilityOf(homePageElements.proceedToCheckoutButton));
                 homePageElements.proceedToCheckoutButton.click();
@@ -66,6 +67,7 @@ public class CommonActions {
             case CREATE_AN_ACCOUNT:
                 wait.until(ExpectedConditions.elementToBeClickable(authenticationPageElements.createAccountButton));
                 authenticationPageElements.createAccountButton.click();
+                wait.until(ExpectedConditions.titleIs("Login - My Store"));
                 break;
             case REGISTER:
                 wait.until(ExpectedConditions.elementToBeClickable(createAccountPageElements.registerButton));
@@ -97,5 +99,4 @@ public class CommonActions {
     public void clickOnLink(String linkName) {
         driver.findElement(By.partialLinkText(linkName)).click();
     }
-
 }

@@ -17,39 +17,38 @@ public class ShoppingCartSteps {
     }
 
     @Then("An item with description name {string} is available in Shopping cart summary")
-    public void an_item_with_description_name_is_available_in_Shopping_cart_summary(String expectedItemName) {
+    public void anItemWithDescriptionNameIsAvailableInShoppingCartSummary(String expectedItemName) {
         Assert.assertTrue("Item not found in Cart",
                 shoppingCartPageActions.isEntryPresentInCart(expectedItemName));
     }
 
     @And("There is {string} in cart")
-    public void there_is_product_in_cart(String expectedProductQuantity) {
+    public void thereIsProductInCart(String expectedProductQuantity) {
         Assert.assertEquals("Product count is not " + expectedProductQuantity, expectedProductQuantity,
                 shoppingCartPageActions.getProductQuantity());
     }
 
     @Then("Delete button should be displayed for the item {string}")
-    public void button_should_be_displayed_for_the_item(String itemName) {
+    public void buttonShouldBeDisplayedForTheItem(String itemName) {
         Assert.assertTrue("Delete button is not Displayed",
                 shoppingCartPageActions.isDeleteButtonPresent(itemName));
     }
 
     @When("Click on Delete button of the item {string}")
-    public void click_on_button_of_the_item(String itemName) {
+    public void clickOnButtonOfTheItem(String itemName) {
         shoppingCartPageActions.clickOnDelete(itemName);
     }
 
     @Then("The shopping cart is empty")
-    public void the_shopping_cart_is_empty() {
+    public void theShoppingCartIsEmpty() {
         Assert.assertEquals("Shopping cart is not empty", "(empty)",
                 shoppingCartPageActions.getVisibleProductQuantityText());
     }
 
 
     @Then("Banner displays the message {string}")
-    public void banner_displays_the_message(String expectedBannerMessage) {
+    public void bannerDisplaysTheMessage(String expectedBannerMessage) {
         Assert.assertEquals("Banner message not displayed correctly",
                 expectedBannerMessage, shoppingCartPageActions.getBannerMessage());
     }
-
 }

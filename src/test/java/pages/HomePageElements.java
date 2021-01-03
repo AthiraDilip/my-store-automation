@@ -8,8 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class HomePageElements {
-    @FindBy(linkText = "Our stores")
-    public WebElement ourStoresLink;
     @FindBy(css = "div.product-container")
     public List<WebElement> productContainers;
     @FindBy(css = "a[title = 'Proceed to checkout']")

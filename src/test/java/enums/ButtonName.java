@@ -13,9 +13,9 @@ public enum ButtonName {
     }
 
     public static ButtonName getButtonName(String buttonLookUpValue) {
-        for (ButtonName buttonName : ButtonName.values()) {
-            if (buttonName.buttonName.equalsIgnoreCase(buttonLookUpValue)) {
-                return buttonName;
+        for (ButtonName button : ButtonName.values()) {
+            if (button.buttonName.equalsIgnoreCase(buttonLookUpValue)) {
+                return button;
             }
         }
         return null;

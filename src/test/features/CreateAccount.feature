@@ -87,8 +87,8 @@ Feature: Create Account page scenarios
     Then I should be navigated to 'My account' page
     And Account name displayed is a combination of '<First Name>' and '<Last Name>'
     Examples:
-      | Title | First Name | Last Name | Password | Date Of Birth | Company        | Address | City  | State  | Zip/Postal code | Country       | Additional Information          | Home Phone | Mobile Phone | Address Alias |
-      | Mrs.  | Athira     | Vivek     | Password | 20/1/1980     | Answer Digital | Grattan | Leeds | Alaska | 50011           | United States | Looking for practice Automation | 9999999999 | 9999999999   | Bradford, UK  |
+      | Title | First Name | Last Name | Password | Date Of Birth | Company  | Address | City  | State  | Zip/Postal code | Country       | Additional Information          | Home Phone | Mobile Phone | Address Alias |
+      | Mrs.  | Athira     | Vivek     | Password | 20/1/1980     | Company1 | Grattan | Leeds | Alaska | 50011           | United States | Looking for practice Automation | 9999999999 | 9999999999   | Bradford, UK  |
 
   @UserStory4
   Scenario Outline: Create an account by providing only mandatory fields

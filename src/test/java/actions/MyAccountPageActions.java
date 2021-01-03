@@ -6,10 +6,10 @@ import pages.MyAccountPageElements;
 import setup.DriverSetup;
 
 public class MyAccountPageActions {
-    MyAccountPageElements myAccountPageElements;
-    CommonActions commonActions;
     private final WebDriver driver;
     private final WebDriverWait wait;
+    MyAccountPageElements myAccountPageElements;
+    CommonActions commonActions;
 
     public MyAccountPageActions(DriverSetup driverSetup, CommonActions commonActions) {
         this.driver = driverSetup.getDriverInstance();

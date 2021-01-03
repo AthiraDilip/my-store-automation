@@ -5,14 +5,14 @@ import pages.SearchResultsPageElements;
 import setup.DriverSetup;
 
 public class SearchResultsPageActions {
+    private final WebDriver driver;
     SearchResultsPageElements searchResultsPageElements;
     CommonActions commonActions;
-    private final WebDriver driver;
 
     public SearchResultsPageActions(DriverSetup driverSetup, CommonActions commonActions) {
         this.driver = driverSetup.getDriverInstance();
-        searchResultsPageElements = new SearchResultsPageElements(driver);
         this.commonActions = commonActions;
+        searchResultsPageElements = new SearchResultsPageElements(driver);
     }
 
 

@@ -16,7 +16,7 @@ public class StoresSteps {
     }
 
     @Then("I should be able to scroll the map to see store near {string}")
-    public void iShouldBeAbleToScrollTheMapToSeeStore(String location) {
+    public void iShouldBeAbleToScrollTheMapToSeeStore(String location) throws InterruptedException {
         storesPageActions.scrollToLocationInMap();
     }
 
@@ -27,6 +27,6 @@ public class StoresSteps {
 
     @And("User should be able to take screenshot")
     public void userShouldBeAbleToTakeScreenshot() {
-        storesPageActions.takeScreenshot();
+        storesPageActions.takeScreenshot("west_palm_beach_stores");
     }
 }

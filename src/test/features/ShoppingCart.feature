@@ -8,7 +8,7 @@ Feature: Shopping cart page scenarios
 
   @UserStory1
   Scenario: Delete an item present in the basket
-    Given I am on 'ShoppingCart' page
+    Given I am on 'Shopping Cart' page
     And There is '1 Product' in cart
     Then Delete button should be displayed for the item 'Faded Short Sleeve T-shirts'
     When Click on Delete button of the item 'Faded Short Sleeve T-shirts'

@@ -8,8 +8,8 @@ import setup.DriverSetup;
 
 public class AuthenticationPageActions {
     AuthenticationPageElements authenticationPageElements;
-    private final WebDriver driver;
-    private final WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
 
     public AuthenticationPageActions(DriverSetup driverSetup) {
         this.driver = driverSetup.getDriverInstance();
@@ -19,6 +19,7 @@ public class AuthenticationPageActions {
 
     public void setEmail(String email) {
         wait.until(ExpectedConditions.titleIs("Login - My Store"));
+        wait.until(ExpectedConditions.visibilityOf(authenticationPageElements.createAccountEmailInput));
         authenticationPageElements.createAccountEmailInput.sendKeys(email);
     }
 

@@ -2,7 +2,6 @@ package stepdefinitions;
 
 import actions.CommonActions;
 import actions.HomePageActions;
-import enums.ButtonName;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
@@ -21,13 +20,12 @@ public class CommonSteps {
     }
 
     @When("I Hover over {string} and click {string}")
-    public void hoverAndAddToCart(String itemName, String buttonName) {
+    public void hoverAndClickButton(String itemName, String buttonName) {
         if (buttonName.equalsIgnoreCase("Add to cart")) {
             homePageActions.hoverAndAddToCart(itemName);
         } else {
             homePageActions.hoverAndClickMenuItem(itemName, buttonName);
         }
-
     }
 
     @Given("I am on {string} page")
@@ -37,6 +35,6 @@ public class CommonSteps {
 
     @When("Click on {string} button")
     public void clickOnButton(String buttonName) {
-        commonActions.clickButton(ButtonName.getButtonName(buttonName));
+        commonActions.clickButton(buttonName);
     }
 }

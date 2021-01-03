@@ -13,9 +13,9 @@ import setup.DriverSetup;
 import java.time.Duration;
 
 public class HomePageActions {
+    private final WebDriver driver;
     HomePageElements homePageElements;
     CommonActions commonActions;
-    private final WebDriver driver;
     WebDriverWait wait;
 
     public HomePageActions(DriverSetup driverSetup, CommonActions commonActions) {
@@ -39,7 +39,8 @@ public class HomePageActions {
 
     private WebElement getProductContainer(String itemName) {
         for (WebElement productContainer : homePageElements.productContainers) {
-            if (productContainer.findElement(By.cssSelector("a.product_img_link")).getAttribute("title").equalsIgnoreCase(itemName)) {
+            if (productContainer.findElement(By.cssSelector("a.product_img_link")).
+                    getAttribute("title").equalsIgnoreCase(itemName)) {
                 return productContainer;
             }
         }
