@@ -46,7 +46,7 @@ public class ShoppingCartSteps {
     }
 
 
-    @Then("Banner displays the message {string}")
+    @And("Banner displays the message {string}")
     public void bannerDisplaysTheMessage(String expectedBannerMessage) {
         Assert.assertEquals("Banner message not displayed correctly",
                 expectedBannerMessage, shoppingCartPageActions.getBannerMessage());

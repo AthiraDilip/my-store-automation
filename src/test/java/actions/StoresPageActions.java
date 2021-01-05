@@ -30,6 +30,7 @@ public class StoresPageActions {
                 storesPageElements.mapElement);
         Actions actions = new Actions(driver);
         wait.until(ExpectedConditions.elementToBeClickable(storesPageElements.mapElement));
+        storesPageElements.mapElement.click();
         actions.click(storesPageElements.mapElement).
                 sendKeys(Keys.PAGE_UP, Keys.PAGE_UP).perform();
         wait.until(ExpectedConditions.elementToBeClickable(storesPageElements.mapZoomInButton));

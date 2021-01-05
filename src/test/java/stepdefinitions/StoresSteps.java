@@ -15,8 +15,8 @@ public class StoresSteps {
         this.storesPageActions = storesPageActions;
     }
 
-    @Then("I should be able to scroll the map to see store near {string}")
-    public void iShouldBeAbleToScrollTheMapToSeeStore(String location) throws InterruptedException {
+    @Then("I should be able to scroll the map to see store near West Palm Beach")
+    public void iShouldBeAbleToScrollTheMapToSeeStore() throws InterruptedException {
         storesPageActions.scrollToLocationInMap();
     }
 
